@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Teste Asin Soluções
 
-## Available Scripts
+Este teste busca avaliar quesitos técnicos para as pessoas que se candidatem às vagas de desenvolvimento full stack da Asin Soluções.
 
-In the project directory, you can run:
+## Desafio
 
-### `yarn start`
+Evoluir o projeto de uma PokeDex em SPA (Single Page Application) usando ReactJS e NodeJS
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Informação importante
+- Este projeto já contém alguns padrões e um deles e a presença de task runners.
+Estes são utilizados para verificar padrões de projeto, como a execução dos testes, padronização dos linters (eslint, prettier e commit lint) e bloqueio da Branch master
 
-### `yarn test`
+- Para subir um novo código, é preciso fazer um fork desse projeto e abrir uma nova PR a cada novo push
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Caso não esteja familiarizado, o padrão de commits é o guide line do (Angular)[https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format]
 
-### `yarn build`
+- Ao final do teste, envie uma PR para este projeto e nos avise pelo e-mail de contato
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## O problema
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Nossa Pokedex já está trazendo os pokemon da pokeApi, porém ainda não conseguimos ver os detalhes de cada um deles e nem temos como ver mais pokemon além dos 20 primeiros
+Outra coisa que nos incomoda é que a API retorna poucos dados na primeira requisição e gostaríamos de ter mais dados com apenas uma request pra economizar requisições, com isso deixar a aplicação mais veloz e melhorar a experiência
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## O que queremos ver
 
-### `yarn eject`
+### backend
+Criar uma API em NodeJS e um banco de dados **RELACIONAL** que irá salvar os dados já consultados pelo usuário. Caso os dados do pokemon já exista na base, retorna-los, caso contrário, buscar na pokeAPI e salvar no banco de dados para futuras consultas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### frontend
+Criação de uma tela simples de detalhes dos pokemon que será apresentada assim que o usuário clicar nos cards de cada pokemon
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## O que será avaliado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ - Sua semântica e capacidade de evoluir um projeto mantendo so padrões pre estabelecidos
+ - Facilidade de entendimento do seu código
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Bonus round
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Será muito bem visto a presença de testes e a refatoração do CSS para utilizar styled-components
