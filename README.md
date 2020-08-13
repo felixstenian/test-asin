@@ -13,7 +13,7 @@ Estes são utilizados para verificar padrões de projeto, como a execução dos 
 
 - Para subir um novo código, é preciso fazer um fork desse projeto e abrir uma nova PR a cada novo push
 
-- Caso não esteja familiarizado, o padrão de commits é o guide line do (Angular)[https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format]
+- Caso não esteja familiarizado, o padrão de commits é o guide line do [Angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format)
 
 - Ao final do teste, envie uma PR para este projeto e nos avise pelo e-mail de contato
 
